@@ -1,3 +1,15 @@
+@font-face {
+  font-family: Angel-Warriors;
+  src: url(../fonts/Angel-Warriors.otf); }
+@font-face {
+  font-family: Motion-Picture;
+  src: url(../fonts/motionPicture.ttf); }
+@font-face {
+  font-family: Angel-Warriors;
+  src: url(../fonts/Angel-Warriors.otf); }
+@font-face {
+  font-family: Motion-Picture;
+  src: url(../fonts/motionPicture.ttf); }
 body {
   background: url("../img/background3.jpg") no-repeat center fixed;
   background-size: 100%; }
@@ -11,24 +23,37 @@ nav {
   position: absolute;
   left: 8px;
   top: 8px;
-  max-height: 48px;
+  max-height: 65.2px;
   max-width: 150px; }
 
 nav > div {
   max-height: 50px;
   max-width: 150px;
   background-color: #b01b1d;
-  color: #e8e8e8;
   -webkit-border-top-left-radius: 100px;
   -webkit-border-bottom-right-radius: 100px;
   -moz-border-radius-topleft: 100px;
   -moz-border-radius-bottomright: 100px;
   border-top-left-radius: 100px;
   border-bottom-right-radius: 100px;
-  padding: 15px; }
+  padding: 15px;
+  font-family: Angel-Warriors;
+  font-size: 1.5em;
+  cursor: pointer; }
+  nav > div > a {
+    text-decoration: none;
+    color: #e8e8e8; }
   nav > div:hover {
     background-color: #841416; }
   nav > div:active {
     background-color: #e44d4f; }
+
+.homeHead {
+  font-family: Motion-Picture;
+  font-weight: lighter;
+  font-size: 2.5em;
+  text-align: center;
+  color: #e8e8e8;
+  text-shadow: 5px 1px black; }
 
 /*# sourceMappingURL=homePage.css.map */

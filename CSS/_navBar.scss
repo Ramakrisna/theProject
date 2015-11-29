@@ -15,7 +15,7 @@ nav {
   position: absolute;
   left: 8px;
   top: 8px;
-  max-height: 48px;
+  max-height: 65.2px;
   max-width: 150px;
 }
 
@@ -23,7 +23,6 @@ nav > div {
   max-height: 50px;
   max-width: 150px;
   background-color: $red;
-  color: $white;
   -webkit-border-top-left-radius: 100px;
   -webkit-border-bottom-right-radius: 100px;
   -moz-border-radius-topleft: 100px;
@@ -31,6 +30,13 @@ nav > div {
   border-top-left-radius: 100px;
   border-bottom-right-radius: 100px;
   padding: 15px;
+  font-family: Angel-Warriors;
+  font-size: 1.5em;
+  cursor: pointer;
+  > a {
+    text-decoration: none;
+    color: $white;
+  }
   &:hover {
     background-color: darken($red, 10%)
   }
