@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 nav {
   display: flex;
   justify-content: flex-end;
@@ -26,5 +27,8 @@ nav > div {
     background-color: #841416; }
   nav > div:active {
     background-color: #e44d4f; }
+=======
+
+>>>>>>> be169598e55b14585241f4db07882565b55e1733
 
 /*# sourceMappingURL=homePage.css.map */
