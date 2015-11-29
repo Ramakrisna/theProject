@@ -1,3 +1,5 @@
+@import "consts";
+
 .container {
   display: flex;
   //outline: 1px solid black;
@@ -6,4 +8,9 @@
 .container >div {
   padding: 10px;
   width: 50%;
+}
+
+
+form {
+  color: $red;
 }
