@@ -1,36 +1,30 @@
-@import "consts";
-
 nav {
   display: flex;
   justify-content: flex-end;
-  background-color: $gray;
-}
+  background-color: #232323; }
 
 img {
   position: absolute;
   left: 8px;
   top: 8px;
   max-height: 48px;
-  max-width: 150px;
-}
+  max-width: 150px; }
 
 nav > div {
   max-height: 50px;
   max-width: 150px;
-  background-color: $red;
-  color: $white;
+  background-color: #b01b1d;
+  color: #e8e8e8;
   -webkit-border-top-left-radius: 100px;
   -webkit-border-bottom-right-radius: 100px;
   -moz-border-radius-topleft: 100px;
   -moz-border-radius-bottomright: 100px;
   border-top-left-radius: 100px;
   border-bottom-right-radius: 100px;
-  padding: 15px;
-  &:hover {
-    background-color: darken($red, 10%)
-  }
-  &:active {
-    background-color: lighten($red, 20%)
-  }
-}
+  padding: 15px; }
+  nav > div:hover {
+    background-color: #841416; }
+  nav > div:active {
+    background-color: #e44d4f; }
 
+/*# sourceMappingURL=homePage.css.map */
