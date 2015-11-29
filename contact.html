@@ -8,43 +8,41 @@
 <body>
 
 <nav>
-    <div>Home</div>
+    <div onclick="window.location.href='homePage.html'">Home</div>
     <div>Games</div>
     <div>About</div>
     <div>Contact Us</div>
 </nav>
 
-<img src="img/logo.jpg" alt="">
+<img id="navBarImg" src="img/logo.jpg" alt="">
 
 
-<h1>Contact</h1>
+<br/>
 <div class="container">
     <div class="contact-forum">
         <h2>Contact us:</h2>
         <form>
             <label for="userName">Name: </label>
             <input id="userName" type="text"/><br/>
-            <label for="userEmail">email: </label>
+            <label for="userEmail">E-mail: </label>
             <input id="userEmail" type="email"/><br/>   
             <label for="messageContant">Message:</label>
-            <textarea name="messageContent" id="messageContant" cols="15" rows="10"></textarea><br/>
+            <textarea name="messageContent" id="messageContant" cols="30" rows="10"></textarea><br/>
             <input value="Send" type="submit"/>
         </form>
     </div>
     <div class="find-us"><p>you can either message us with the form on this page or contact us via : </p><br/>
-        <div class="phone-contact">
-            Phone<img src="img/phone.png" alt="call us"/>
-        </div>
-        <div class="mail-contact">
-            <img src="img/Mail.png" alt="email us"/>Mail
-        </div>
-        <div class="facebook-contact">
-            <img src="img/facebook.png" alt="our facebook"/>facebook
-        </div>
-        <div class="skype-contact">
-            <img src="img/skype.png" alt="Skype"/>skype
-        </div>
+        <a href="tel:+972546656581"><div class="contact phone-contact">
+            <img class="contactPic" src="img/phone.png" alt="call us"/><span>+972546656581</span>
+        </div></a>
+        <a href="mailto:markroze@gmail.com"><div class="contact mail-contact">
+            <img src="img/Mail.png" class="contactPic" alt="email us"/><span>markroze@gmail.com</span>
+        </div></a>
+        <a href="http://facebook.com"><div class="contact facebook-contact">
+            <img onclick="" src="img/facebook.png" class="contactPic" alt="our facebook"/><span>facebook</span>
+        </div></a>
     </div>
 </div>
+<script src="JS/contact.js"></script>
 </body>
 </html>
