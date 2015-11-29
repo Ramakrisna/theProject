@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  //outline: 1px solid black;
+  margin: 50px;
+}
+.container >div {
+  padding: 10px;
+  width: 50%;
+}
