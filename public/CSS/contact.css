@@ -17,7 +17,8 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
-  background-color: #232323; }
+  background-color: #232323;
+  flex-flow: wrap; }
 
 #navBarImg {
   position: absolute;

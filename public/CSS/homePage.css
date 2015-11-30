@@ -17,7 +17,8 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
-  background-color: #232323; }
+  background-color: #232323;
+  flex-flow: wrap; }
 
 #navBarImg {
   position: absolute;
@@ -55,5 +56,8 @@ nav > div {
   text-align: center;
   color: #e8e8e8;
   text-shadow: 5px 1px black; }
+
+.wrapper {
+  margin-right: 35%; }
 
 /*# sourceMappingURL=homePage.css.map */
