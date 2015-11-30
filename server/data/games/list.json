@@ -1,10 +1,42 @@
 [
   {
     "id": "minesweeper",
-    "name": "The Ultimate Minesweeper"
+    "name": "The Ultimate Minesweeper",
+    "desc": "Like the Classic game but newly design and built purely on JS and CSS",
+    "rate": "3",
+    "raters": "5",
+    "published": "1448693940000",
+    "by": "Mark Rozovsky",
+    "pic": "images/minesweeperLogo.jpg"
   },
   {
     "id": "chess",
-    "name": "Chess Master"
+    "name": "Chess Master",
+    "desc": "Game of Masters built by a Master Server",
+    "rate": "4",
+    "raters": "12",
+    "published": "1448694572789",
+    "by": "Ram Goldhechet",
+    "pic": "images/chess.jpg"
+  },
+  {
+    "id": "guessTheNum",
+    "name": "Guess the Number",
+    "desc": "I'm thinking of a number, think you can guess what it is??",
+    "rate": "2",
+    "raters": "9",
+    "published": "1448623566844",
+    "by": "Ram Goldhechet",
+    "pic": "images/guessTheNumber.jpg"
+  },
+  {
+    "id": "simon",
+    "name": "Simon Memory Game",
+    "desc": "Try and remember all of the noter played!",
+    "rate": "4",
+    "raters": "12",
+    "published": "1448694572789",
+    "by": "Ram Goldhechet",
+    "pic": ""
   }
 ]

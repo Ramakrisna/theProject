@@ -1,0 +1,11 @@
+@import "consts";
+@import "navBar";
+
+.child > img {
+  width: 220px;
+}
+.gamesFlex {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}

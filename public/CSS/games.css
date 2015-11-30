@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Angel-Warriors;
+  src: url(../fonts/Angel-Warriors.otf); }
+@font-face {
+  font-family: Motion-Picture;
+  src: url(../fonts/motionPicture.ttf); }
+@font-face {
+  font-family: Angel-Warriors;
+  src: url(../fonts/Angel-Warriors.otf); }
+@font-face {
+  font-family: Motion-Picture;
+  src: url(../fonts/motionPicture.ttf); }
+body {
+  background: url("../img/background3.jpg") no-repeat center fixed;
+  background-size: 100%; }
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #232323;
+  flex-flow: wrap; }
+
+#navBarImg {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  max-height: 65.2px;
+  max-width: 150px; }
+
+nav > div {
+  max-height: 50px;
+  max-width: 150px;
+  background-color: #b01b1d;
+  -webkit-border-top-left-radius: 100px;
+  -webkit-border-bottom-right-radius: 100px;
+  -moz-border-radius-topleft: 100px;
+  -moz-border-radius-bottomright: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding: 15px;
+  font-family: Angel-Warriors;
+  font-size: 1.5em;
+  cursor: pointer; }
+  nav > div > a {
+    text-decoration: none;
+    color: #e8e8e8; }
+  nav > div:hover {
+    background-color: #841416; }
+  nav > div:active {
+    background-color: #e44d4f; }
+
+.child > img {
+  width: 220px; }
+
+.gamesFlex {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px; }
+
+/*# sourceMappingURL=games.css.map */
