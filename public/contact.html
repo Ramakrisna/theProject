@@ -21,13 +21,13 @@
 <div class="container">
     <div class="contact-forum">
         <h2>Contact us</h2>
-        <form action="../server">
+        <form action=api/contact method="post">
             <label for="userName">Name: </label>
-            <input id="userName" type="text"/><br/>
+            <input name="userName" id="userName" type="text"/>
             <label for="userEmail">E-mail: </label>
-            <input id="userEmail" type="email"/><br/>   
+            <input name="userEmail" id="userEmail" type="email"/>
             <label for="messageContant">Message:</label>
-            <textarea name="messageContent" id="messageContant" cols="30" rows="10"></textarea><br/>
+            <textarea name="messageContent" id="messageContant" cols="30" rows="10"></textarea>
             <input value="Send" type="submit"/>
         </form>
     </div>
