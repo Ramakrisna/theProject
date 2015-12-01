@@ -21,7 +21,7 @@
 <div class="container">
     <div class="contact-forum">
         <h2>Contact us</h2>
-        <form action=api/contact method="post">
+        <form onsubmit="sendForm(this); return false">
             <label for="userName">Name: </label>
             <input name="userName" id="userName" type="text"/>
             <label for="userEmail">E-mail: </label>
@@ -43,6 +43,7 @@
         </div></a>
     </div>
 </div>
+<script src="JS/jquery-2.1.4.js"></script>
 <script src="JS/contact.js"></script>
 </body>
 </html>
