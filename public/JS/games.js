@@ -24,10 +24,22 @@ function renderDesc(id) {
         $(elDesc).html( '<div class="desc-title">' + game.name + '</div>' +
                         '<div class="desc-pic"><img src="' + game.pic +'"/></div>' +
                         '<div class="desc-info">' + game.desc + '</div>' +
-                        '<div class="desc-rating">' + game.rate + '</div>' +
-                        '<div class="desc-raters">' + game.raters + '</div>'
-                                
+                        '<div class="desc-rating">User Rating:' +"☆".repeat(game.rate) + '</div>' +
+                        '<div class="desc-raters">Raters: ' + game.raters + '</div>'+
+                        'Your Rating: <div class="rating" data-rate-value=3></div>'
         );
+
+        $(".rating").rate();
+
+        //or for example
+        var options = {
+            max_value: 6,
+            step_size: 1,
+            readonly: false,
+        }
+        $(".rating").rate(options);
+
+
     });
 
     elDesc.addClass('showDesc');
@@ -37,8 +49,9 @@ function renderDesc(id) {
 function removeDesc(key) {
     document.querySelector('.descriptionPop').classList.remove('showDesc');
     document.querySelector('.cinemaOff').classList.remove('cinemaOn');
-
 }
+
+
 
 //style="background-image: url(
 //    <img src='" + value.pic + "'/>
