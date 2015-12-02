@@ -1,42 +1,116 @@
 @import "consts";
 
-body {
-  background: url("../img/background3.jpg") no-repeat center fixed ;
-  background-size: 100%;
+
+@media (min-width: 1201px) {
+  body {
+    background: url("../img/background3.jpg") no-repeat center fixed ;
+    background-size: 100%;
+  }
 }
 
-nav {
+@media (min-width: 751px) and (max-width: 1200px) {
+  body {
+    background: url("../img/background3.jpg") no-repeat center fixed ;
+    background-size: cover;
+  }
+
+  #navBarImg {
+    max-height: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    background: url("../img/background3.jpg") no-repeat center fixed ;
+    background-size: cover;
+  }
+
+  #navBarImg {
+    max-height: 37.2px;
+  }
+}
+
+@media (min-width: 586.4px) {
+  #navBarImg {
+    max-height: 50px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.nav-container {
   display: flex;
   justify-content: flex-end;
   background-color: $gray;
-  flex-flow: wrap;
+  flex-direction: column;
 }
+
 
 #navBarImg {
   position: absolute;
-  left: 8px;
-  top: 8px;
-  max-height: 65.2px;
-  max-width: 150px;
+  left: 0;
+  top: 0;
 }
 
-nav > div {
-  max-height: 50px;
-  max-width: 150px;
+/* nav links */
+
+.nav-bar {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-menu-on {
+  display: flex;
+}
+
+.nav-item {
   background-color: $red;
-  -webkit-border-top-left-radius: 100px;
-  -webkit-border-bottom-right-radius: 100px;
-  -moz-border-radius-topleft: 100px;
-  -moz-border-radius-bottomright: 100px;
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  padding: 15px;
-  font-family: Angel-Warriors;
-  font-size: 1.5em;
-  cursor: pointer;
-  > a {
+  border-radius: 10px;
+  > .nav-link {
     text-decoration: none;
     color: $white;
+    font-family: Angel-Warriors;
+  }
+}
+
+.nav-item {
+
+}
+
+.nav-item:last-child {
+  border-bottom: 0;
+}
+
+nav > button {
+  border: none;
+}
+
+/* nav toggle */
+
+.nav-menu {
+  text-decoration: none;
+  align-self: flex-end;
+  max-height: 50px;
+  font-size: 1.5em;
+  width: 150px;
+  font-family: Angel-Warriors;
+  color: $white;
+  background-color: $red;
+  -webkit-border-radius: 100px 0 100px 0;
+  -moz-border-radius: 100px 0 100px 0;
+  border-radius: 100px 0 100px 0;
+  > .nav-link {
+    padding: 15px;
+    text-align: center;
+    > a {
+      border-bottom: solid $white 1px;
+    }
   }
   &:hover {
     background-color: darken($red, 10%)
@@ -46,3 +120,42 @@ nav > div {
   }
 }
 
+/* media queries */
+
+@media (min-width: 600px) {
+
+  .nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    max-height: 50px;
+  }
+
+  .nav-item {
+    max-height: 50px;
+    max-width: 150px;
+    background-color: $red;
+    -webkit-border-radius: 100px 0 100px 0;
+    -moz-border-radius: 100px 0 100px 0;
+    border-radius: 100px 0 100px 0;
+    font-family: Angel-Warriors;
+    padding: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    > .nav-link {
+      text-decoration: none;
+      color: $white;
+      padding: 15px;
+    }
+    &:hover {
+      background-color: darken($red, 10%)
+    }
+    &:active {
+      background-color: lighten($red, 20%)
+    }
+  }
+
+  .nav-menu {
+    display: none;
+  }
+}
