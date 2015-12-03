@@ -8,21 +8,33 @@
 <link rel="stylesheet" href="CSS/animate.css"/>
 <body>
 
-<nav>
-    <div><a href="homePage.html">Home</a></div>
-    <div><a href="games.html">Games</a></div>
-    <div><a href="about.html">About</a></div>
-    <div><a href="contact.html">Contact Us</a></div>
+<nav class="nav-container">
+    <button id="nav-menu" class="nav-menu">Menu</button>
+    <ul id="nav-bar" class="nav-bar">
+        <li class="nav-item"><a href="homePage.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="games.html" class="nav-link">Games</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
 </nav>
+<<<<<<< HEAD
 <div id="cinema" onclick="removeDesc()" class="cinemaOff"></div>
 
 <img id="navBarImg" src="img/logo.jpg" alt="">
     <div class="descriptionPop animated bounceInDown" id="descritionPop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ad amet asperiores at dignissimos eum fuga hic inventore ipsum molestiae nam necessitatibus omnis quam qui reiciendis rem, sed tempora voluptates?</div>
+=======
+
+<img id="navBarImg" src="img/logo.jpg" alt="">
+
+<div id="cinema" class="cinemaOff"></div>
+    <div onclick="removeDesc()" class="descriptionPop" id="descritionPop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ad amet asperiores at dignissimos eum fuga hic inventore ipsum molestiae nam necessitatibus omnis quam qui reiciendis rem, sed tempora voluptates?</div>
+>>>>>>> 5c3db53ca333b342fc4c028c45cf71cd9d3f50b9
 <div id="gamesFlex"  class="gamesFlex"></div>
 
 
 <script src="lib/jquery-2.1.4.min.js"></script>
 <script src="JS/rater.min.js"></script>
 <script src="JS/games.js"></script>
+<script src="JS/navBar.js"></script>
 </body>
 </html>
