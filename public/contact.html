@@ -7,45 +7,45 @@
 </head>
 <body>
 
-<nav class="nav-container">
-    <button id="nav-menu" class="nav-menu">Menu</button>
-    <ul id="nav-bar" class="nav-bar">
-        <li class="nav-item"><a href="homePage.html" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="games.html" class="nav-link">Games</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-</nav>
+    <nav class="nav-container">
+        <button id="nav-menu" class="nav-menu">Menu</button>
+        <ul id="nav-bar" class="nav-bar">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="games.html" class="nav-link">Games</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
 
-<img id="navBarImg" src="img/logo.jpg" alt="">
+    <a href="admin.html"><img id="navBarImg" src="img/logo.jpg" alt=""></a>
 
 
-<br/>
-<div class="container">
-    <div class="contact-forum">
-        <h2>Contact us</h2>
-        <form onsubmit="sendForm(this); return false">
-            <label for="userName">Name: </label>
-            <input name="userName" id="userName" type="text"/>
-            <label for="userEmail">E-mail: </label>
-            <input name="userEmail" id="userEmail" type="email"/>
-            <label for="messageContant">Message:</label>
-            <textarea name="messageContent" id="messageContant" cols="30" rows="10"></textarea>
-            <input value="Send" type="submit"/>
-        </form>
+    <br/>
+    <div class="container">
+        <div class="contact-forum">
+            <h2>Contact us</h2>
+            <form onsubmit="sendForm(this); return false">
+                <label for="userName">Name: </label>
+                <input name="userName" id="userName" type="text"/>
+                <label for="userEmail">E-mail: </label>
+                <input name="userEmail" id="userEmail" type="email"/>
+                <label for="messageContant">Message:</label>
+                <textarea name="messageContent" id="messageContant" cols="30" rows="10"></textarea>
+                <input value="Send" type="submit"/>
+            </form>
+        </div>
+        <div class="find-us"><p>you can either message us with the form on this page or contact us via  </p><br/>
+            <a href="tel:+972546656581"><div class="contact phone-contact">
+                <img class="contactPic" src="img/phone.png" alt="call us"/><span>+972546656581</span>
+            </div></a>
+            <a href="mailto:markroze@gmail.com"><div class="contact mail-contact">
+                <img src="img/Mail.png" class="contactPic" alt="email us"/><span>markroze@gmail.com</span>
+            </div></a>
+            <a href="http://facebook.com"><div class="contact facebook-contact">
+                <img onclick="" src="img/facebook.png" class="contactPic" alt="our facebook"/><span>facebook</span>
+            </div></a>
+        </div>
     </div>
-    <div class="find-us"><p>you can either message us with the form on this page or contact us via  </p><br/>
-        <a href="tel:+972546656581"><div class="contact phone-contact">
-            <img class="contactPic" src="img/phone.png" alt="call us"/><span>+972546656581</span>
-        </div></a>
-        <a href="mailto:markroze@gmail.com"><div class="contact mail-contact">
-            <img src="img/Mail.png" class="contactPic" alt="email us"/><span>markroze@gmail.com</span>
-        </div></a>
-        <a href="http://facebook.com"><div class="contact facebook-contact">
-            <img onclick="" src="img/facebook.png" class="contactPic" alt="our facebook"/><span>facebook</span>
-        </div></a>
-    </div>
-</div>
 <script src="JS/jquery-2.1.4.js"></script>
 <script src="JS/contact.js"></script>
 <script src="JS/navBar.js"></script>

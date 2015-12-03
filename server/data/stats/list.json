@@ -1,0 +1,30 @@
+[
+  {
+    "game": "minesweeper",
+    "action": "start"
+  },
+  {
+    "game": "minesweeper",
+    "action": "win"
+  },
+  {
+    "game": "chess",
+    "action": "start"
+  },
+  {
+    "game": "chess",
+    "action": "start"
+  },
+  {
+    "game": "popBalloons",
+    "action": "start"
+  },
+  {
+    "game": "popBalloons",
+    "action": "lose"
+  },
+  {
+    "game": "minesweeper",
+    "action": "start"
+  }
+]
