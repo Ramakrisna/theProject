@@ -5,6 +5,7 @@
     <title>Games</title>
 </head>
 <link rel="stylesheet" href="CSS/games.css"/>
+<link rel="stylesheet" href="CSS/animate.css"/>
 <body>
 
 <nav>
@@ -13,10 +14,10 @@
     <div><a href="about.html">About</a></div>
     <div><a href="contact.html">Contact Us</a></div>
 </nav>
-<div id="cinema" class="cinemaOff"></div>
+<div id="cinema" onclick="removeDesc()" class="cinemaOff"></div>
 
 <img id="navBarImg" src="img/logo.jpg" alt="">
-    <div onclick="removeDesc()" class="descriptionPop" id="descritionPop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ad amet asperiores at dignissimos eum fuga hic inventore ipsum molestiae nam necessitatibus omnis quam qui reiciendis rem, sed tempora voluptates?</div>
+    <div class="descriptionPop animated bounceInDown" id="descritionPop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ad amet asperiores at dignissimos eum fuga hic inventore ipsum molestiae nam necessitatibus omnis quam qui reiciendis rem, sed tempora voluptates?</div>
 <div id="gamesFlex"  class="gamesFlex"></div>
 
 

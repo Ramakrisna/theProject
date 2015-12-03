@@ -77,6 +77,7 @@ body {
 
 .descriptionPop {
   position: absolute;
+  display: none;
   font-size: 1.5em;
   left: 10%;
   top: 20%;
@@ -84,13 +85,12 @@ body {
   height: 60%;
   text-align: left;
   z-index: -1;
-  opacity: 0;
-  transition: 1s;
+  transition: 0.1s;
   background-color: #e8e8e8; }
 
 .descriptionPop > div > img {
   position: absolute;
-  width: 40%;
+  width: 30%;
   height: auto;
   right: 10px;
   top: 10px; }
@@ -116,7 +116,7 @@ body {
 
 .showDesc {
   z-index: 3;
-  opacity: 1; }
+  display: block; }
 
 .desc-title {
   font-size: 2em;
