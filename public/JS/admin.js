@@ -17,17 +17,30 @@ function getStats () {
         //console.log(data);
         $.each(data, function(index, value) {
             if (gameCount[value.game] === undefined) {
-                gameCount[value.game] = 1;
-            } else if (value.action === "start"){
-                gameCount[value.game]++;
+                gameCount[value.game] = {start: 1, win: 0, lose: 0};
+            } else {
+                switch (value.action) {
+                    case 'start':
+                        gameCount[value.game].start++;
+                        break;
+                    case 'win':
+                        gameCount[value.game].win++;
+                        break;
+                    case 'lose':
+                        gameCount[value.game].lose++;
+                        break;
+                }
             }
         });
+        console.log(gameCount);
         var games = Object.keys(gameCount);
         console.log(games);
         var strHtml = '';
         $.each(games, function (index, game) {
             strHtml += '<tr><td>'+ game +'</td>' +
-                    '<td>'+ gameCount[game] +'</td></tr>';
+                    '<td>'+ gameCount[game].start +'</td>' +
+                    '<td>'+ gameCount[game].win +'</td>' +
+                    '<td>'+ gameCount[game].lose +'</td></tr>'
         });
         console.log(strHtml);
         $('.tableStats').html(strHtml);

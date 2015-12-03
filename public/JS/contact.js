@@ -10,4 +10,7 @@ function sendForm(obj) {
             console.log('Added!');
         }
     });
+    $('#userName').val('');
+    $('#userEmail').val('');
+    $('#messageContent').val('');
 }

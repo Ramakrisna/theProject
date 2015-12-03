@@ -7,7 +7,8 @@
     "raters": "5",
     "published": "1448693940000",
     "by": "Mark Rozovsky",
-    "pic": "images/minesweeperLogo.jpg"
+    "pic": "images/minesweeperLogo.jpg",
+    "userRating": "null"
   },
   {
     "id": "chess",
@@ -17,7 +18,8 @@
     "raters": "12",
     "published": "1448694572789",
     "by": "Ram Goldhechet",
-    "pic": "images/chess.jpg"
+    "pic": "images/chess.jpg",
+    "userRating": "null"
   },
   {
     "id": "guessTheNum",
@@ -27,7 +29,8 @@
     "raters": "9",
     "published": "1448623566844",
     "by": "Ram Goldhechet",
-    "pic": "images/guessTheNumber.jpg"
+    "pic": "images/guessTheNumber.jpg",
+    "userRating": "null"
   },
   {
     "id": "simon",
@@ -37,6 +40,7 @@
     "raters": "12",
     "published": "1448694572789",
     "by": "Ram Goldhechet",
-    "pic": "images/simon.jpg"
+    "pic": "images/simon.jpg",
+    "userRating": "null"
   }
 ]

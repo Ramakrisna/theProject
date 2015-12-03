@@ -5,6 +5,7 @@
     <title>Games</title>
 </head>
 <link rel="stylesheet" href="CSS/games.css"/>
+<link rel="stylesheet" href="CSS/animate.css"/>
 <body>
 
 <nav class="nav-container">
@@ -18,11 +19,11 @@
 </nav>
 
 <a href="admin.html"><img id="navBarImg" src="img/logo.jpg" alt=""></a>
+<div id="cinema" onclick="removeDesc()" class="cinemaOff"></div>
 
-<div id="cinema" class="cinemaOff"></div>
-    <div onclick="removeDesc()" class="descriptionPop" id="descritionPop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ad amet asperiores at dignissimos eum fuga hic inventore ipsum molestiae nam necessitatibus omnis quam qui reiciendis rem, sed tempora voluptates?</div>
+<img id="navBarImg" src="img/logo.jpg" alt="">
+    <div class="descriptionPop animated bounceInDown" id="descritionPop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ad amet asperiores at dignissimos eum fuga hic inventore ipsum molestiae nam necessitatibus omnis quam qui reiciendis rem, sed tempora voluptates?</div>
 <div id="gamesFlex"  class="gamesFlex"></div>
-
 
 <script src="lib/jquery-2.1.4.min.js"></script>
 <script src="JS/rater.min.js"></script>

@@ -127,17 +127,23 @@ nav > button {
 table {
   margin: auto;
   margin-top: 30px;
-  border: solid black 1px;
-  border-radius: 5px; }
+  border: outset #e8e8e8 5px;
+  border-radius: 5px;
+  background-color: #2eb327;
+  opacity: 0.8; }
 
 tr, td {
-  border: solid black 1px;
-  text-align: center; }
+  border: outset #e8e8e8 3px;
+  text-align: center;
+  padding: 8px;
+  font-size: larger;
+  font-family: Calibri;
+  color: #3d3d3d; }
 
 thead > tr > td {
   color: #b01b1d;
-  font-size: larger;
-  padding: 5px;
-  text-shadow: 2px 0 black; }
+  font-family: "Copperplate Gothic Light";
+  text-shadow: 2px 2px #e8e8e8;
+  font-size: 1.8em; }
 
 /*# sourceMappingURL=admin.css.map */
